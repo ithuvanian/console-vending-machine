@@ -1,0 +1,14 @@
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.exe.config
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.exe
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.pdb
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csprojResolveAssemblyReference.cache
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csproj.CoreCompileInputs.cache
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.exe
+c:\users\miweaver\source\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.pdb
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.exe.config
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.exe
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.pdb
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csprojResolveAssemblyReference.cache
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csproj.CoreCompileInputs.cache
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.exe
+C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.pdb
