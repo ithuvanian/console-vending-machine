@@ -9,23 +9,22 @@ namespace ConsoleVendingMachine
 {
     public class VendingMachine
     {
-        public decimal MoneyInMachine { get; set; }
-        public decimal CurrentMoneyProvided { get; set; }
-
+        public decimal MoneyPaid { get; set; }
+        public decimal CurrentBalance { get; set; }
         public Dictionary<string, Item> itemsInMachine = new Dictionary<string, Item>();
         public Dictionary<string, int> coins = new Dictionary<string, int>
             {
                 {"quarters", 0 },
                 {"dimes", 0 },
-                {"nickles", 0 }
+                {"nickels", 0 }
             };
 
 
         public VendingMachine()
         {
             BuildInventory();
-            CurrentMoneyProvided = 0;
-            MoneyInMachine = 0;
+            CurrentBalance = 0;
+            MoneyPaid = 0;
         }
 
         public void BuildInventory()
@@ -50,74 +49,74 @@ namespace ConsoleVendingMachine
 
         public void FeedMoney(int dollars)
         {
-            CurrentMoneyProvided += dollars;
+            CurrentBalance += dollars;
             string dir = Environment.CurrentDirectory;
             string fileName = "Log.txt";
             string fullPath = Path.Combine(dir, fileName);
             using (StreamWriter sw = new StreamWriter(fullPath, true))
             {
-                sw.Write("{0,-50}{1,-10}{2,-10}\n", $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")} FEED MONEY", dollars.ToString("$0.00"), CurrentMoneyProvided.ToString("$0.00"));
+                sw.WriteLine("{0,-50}{1,-10}{2,-10}\n", $"{DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")} FEED MONEY", dollars.ToString("$0.00"), CurrentBalance.ToString("$0.00"));
             }
         }
 
         public void MakePurchase(Item selectedItem)
         {
-            decimal beginningBalance = CurrentMoneyProvided;
+            decimal beginningBalance = CurrentBalance;
             selectedItem.Qty--;
             selectedItem.Sold++;
-            CurrentMoneyProvided -= selectedItem.Price;
-            MoneyInMachine += selectedItem.Price;
+            CurrentBalance -= selectedItem.Price;
+            MoneyPaid += selectedItem.Price;
 
             string dir = Environment.CurrentDirectory;
             string fileName = "Log.txt";
             string fullPath = Path.Combine(dir, fileName);
             using (StreamWriter sw = new StreamWriter(fullPath, true))
             {
-                sw.Write("{0,-50}{1,-10}{2,-10}\n", $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")} {selectedItem.Name} {selectedItem.SlotID} ", beginningBalance.ToString("$0.00"), CurrentMoneyProvided.ToString("$0.00"));
+                sw.WriteLine("{0,-50}{1,-10}{2,-10}\n", $"{DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")} {selectedItem.Name} {selectedItem.SlotID} ", beginningBalance.ToString("$0.00"), CurrentBalance.ToString("$0.00"));
             }
         }
 
         public void CancelPurchase(Item selectedItem)
         {
-            decimal beginningBalance = CurrentMoneyProvided;
+            decimal beginningBalance = CurrentBalance;
             selectedItem.Qty++;
             selectedItem.Sold--;
-            CurrentMoneyProvided += selectedItem.Price;
-            MoneyInMachine -= selectedItem.Price;
+            CurrentBalance += selectedItem.Price;
+            MoneyPaid -= selectedItem.Price;
 
             string dir = Environment.CurrentDirectory;
             string fileName = "Log.txt";
             string fullPath = Path.Combine(dir, fileName);
             using (StreamWriter sw = new StreamWriter(fullPath, true))
             {
-                sw.Write("{0,-50}{1,-10}{2,-10}\n", $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")} CANCEL {selectedItem.Name} {selectedItem.SlotID} ", beginningBalance.ToString("$0.00"), CurrentMoneyProvided.ToString("$0.00"));
+                sw.WriteLine("{0,-50}{1,-10}{2,-10}", $"{DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")} CANCEL {selectedItem.Name} {selectedItem.SlotID} ", beginningBalance.ToString("$0.00"), CurrentBalance.ToString("$0.00"));
             }
         }
 
         public void GiveChange()
         {
-            decimal beginningBalance = CurrentMoneyProvided;
-            while (CurrentMoneyProvided >= .25M)
+            decimal beginningBalance = CurrentBalance;
+            while (CurrentBalance >= .25M)
             {
-                CurrentMoneyProvided -= .25M;
+                CurrentBalance -= .25M;
                 coins["quarters"]++;
             }
-            while (CurrentMoneyProvided >= .1M)
+            while (CurrentBalance >= .1M)
             {
-                CurrentMoneyProvided -= .1M;
+                CurrentBalance -= .1M;
                 coins["dimes"]++;
             }
-            while (CurrentMoneyProvided > 0)
+            while (CurrentBalance > 0)
             {
-                CurrentMoneyProvided -= .05M;
-                coins["nickles"]++;
+                CurrentBalance -= .05M;
+                coins["nickels"]++;
             }
             string dir = Environment.CurrentDirectory;
             string fileName = "Log.txt";
             string fullPath = Path.Combine(dir, fileName);
             using (StreamWriter sw = new StreamWriter(fullPath, true))
             {
-                sw.Write("{0,-50}{1,-10}{2,-10}\n", $"{DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")} GIVE CHANGE", beginningBalance.ToString("$0.00"), CurrentMoneyProvided.ToString("$0.00"));
+                sw.WriteLine("{0,-50}{1,-10}{2,-10}", $"{DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")} GIVE CHANGE", beginningBalance.ToString("$0.00"), CurrentBalance.ToString("$0.00"));
             }
         }
 
@@ -125,7 +124,7 @@ namespace ConsoleVendingMachine
         {
             coins["quarters"] = 0;
             coins["dimes"] = 0;
-            coins["nickles"] = 0;
+            coins["nickels"] = 0;
         }
 
         public void CreateReport()
@@ -141,7 +140,7 @@ namespace ConsoleVendingMachine
                     sw.WriteLine($"{item.Value.Name} | {item.Value.Sold}");
                 }
                 sw.WriteLine();
-                sw.WriteLine($"**TOTAL SALES** {MoneyInMachine.ToString("$0.00")}");
+                sw.WriteLine($"**TOTAL SALES** {MoneyPaid.ToString("$0.00")}");
             }
         }
     }

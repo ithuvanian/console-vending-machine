@@ -1,23 +1,9 @@
-09/03/2018 09:57:11 PM FEED MONEY                 $5.00     $5.00     
-09/03/2018 09:57:15 PM Mountain Melter C3         $5.00     $3.50     
-09/03/2018 09:57:19 PM Potato Crisps A1           $3.50     $0.45     
-09/03/2018 09:57:26 PM CANCEL Mountain Melter C3  $0.45     $1.95     
-09/03/2018 09:57:26 PM CANCEL Potato Crisps A1    $1.95     $5.00     
-09/03/2018 09:57:26 PM GIVE CHANGE                $5.00     $0.00     
-09/03/2018 09:57:38 PM FEED MONEY                 $5.00     $5.00     
-09/03/2018 09:57:42 PM Stackers A2                $5.00     $3.55     
-09/03/2018 09:57:44 PM Dr. Salt C2                $3.55     $2.05     
-09/03/2018 09:57:58 PM Triplemint D4              $2.05     $1.30     
-09/03/2018 09:58:03 PM GIVE CHANGE                $1.30     $0.00     
-09/03/2018 09:58:35 PM FEED MONEY                 $5.00     $5.00     
-09/03/2018 09:58:37 PM Little League Chew D2      $5.00     $4.05     
-09/03/2018 09:58:39 PM U-Chews D1                 $4.05     $3.20     
-09/03/2018 09:58:41 PM Triplemint D4              $3.20     $2.45     
-09/03/2018 09:58:44 PM GIVE CHANGE                $2.45     $0.00     
-09/03/2018 09:59:14 PM FEED MONEY                 $5.00     $5.00     
-09/03/2018 09:59:17 PM Little League Chew D2      $5.00     $4.05     
-09/03/2018 09:59:19 PM Stackers A2                $4.05     $2.60     
-09/03/2018 09:59:22 PM Dr. Salt C2                $2.60     $1.10     
-09/03/2018 09:59:24 PM GIVE CHANGE                $1.10     $0.00     
-30/04/2018 09:03:29 PM FEED MONEY                 $4.00     $4.00     
-30/04/2018 09:03:37 PM GIVE CHANGE                $4.00     $0.00     
+05/09/2018 07:13:54 PM FEED MONEY                 $8.00     $8.00     
+
+05/09/2018 07:13:59 PM Potato Crisps A1           $8.00     $4.95     
+
+05/09/2018 07:14:11 PM Mountain Melter C3         $4.95     $3.45     
+
+05/09/2018 07:14:17 PM Heavy C4                   $3.45     $1.95     
+
+05/09/2018 07:14:20 PM GIVE CHANGE                $1.95     $0.00     

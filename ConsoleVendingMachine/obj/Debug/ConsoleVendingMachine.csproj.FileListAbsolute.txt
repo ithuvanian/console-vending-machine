@@ -12,3 +12,10 @@ C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVending
 C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csproj.CoreCompileInputs.cache
 C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.exe
 C:\Users\Micha\Documents\MEGA\code\c#\repos\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.pdb
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.exe.config
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.exe
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\bin\Debug\ConsoleVendingMachine.pdb
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csprojResolveAssemblyReference.cache
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.csproj.CoreCompileInputs.cache
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.exe
+C:\Users\Micha\Documents\MEGA\code\teProjects\ConsoleVendingMachine\ConsoleVendingMachine\obj\Debug\ConsoleVendingMachine.pdb

@@ -55,7 +55,7 @@ namespace ConsoleVendingMachine
         {
             bool selectionMade = false;
             Console.WriteLine("Press 1 to insert money, 2 to select a product, 3 to finish transaction, or 0 to cancel transaction:");
-            Console.WriteLine($"Current money provided: {vendingMachine.CurrentMoneyProvided.ToString("$0.00")}");
+            Console.WriteLine($"Current money provided: {vendingMachine.CurrentBalance.ToString("$0.00")}");
             string userInput = Console.ReadLine();
             switch (userInput)
             {
@@ -71,7 +71,7 @@ namespace ConsoleVendingMachine
                     UserFeedMoney(vendingMachine);
                     return false;
                 case "2":
-                    if (vendingMachine.CurrentMoneyProvided > 0)
+                    if (vendingMachine.CurrentBalance > 0)
                     {
                         while (selectionMade == false)
                         {
@@ -130,7 +130,7 @@ namespace ConsoleVendingMachine
                     Console.WriteLine("Sorry, that item is sold out");
                     Console.WriteLine();
                 }
-                else if (vendingMachine.CurrentMoneyProvided < selectedItem.Price)
+                else if (vendingMachine.CurrentBalance < selectedItem.Price)
                 {
                     Console.WriteLine("More money needed for your selected item");
                     Console.WriteLine();
