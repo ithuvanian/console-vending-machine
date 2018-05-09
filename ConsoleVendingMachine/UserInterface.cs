@@ -38,7 +38,7 @@ namespace ConsoleVendingMachine
 
         public void UserDisplayItems(VendingMachine vendingMachine)
         {
-            foreach (KeyValuePair<string, Item> listing in vendingMachine.itemsInMachine)
+            foreach (KeyValuePair<string, Item> listing in vendingMachine.Items)
             {
                 Item thisItem = listing.Value;
                 string itemStatus = "";
@@ -116,7 +116,7 @@ namespace ConsoleVendingMachine
                 UserDisplayItems(vendingMachine);
                 return false;
             }
-            else if (!vendingMachine.itemsInMachine.ContainsKey(userInput))
+            else if (!vendingMachine.Items.ContainsKey(userInput))
             {
                 Console.WriteLine("Input does not match any item");
                 Console.WriteLine();
@@ -124,7 +124,7 @@ namespace ConsoleVendingMachine
             }
             else
             {
-                Item selectedItem = vendingMachine.itemsInMachine[userInput];
+                Item selectedItem = vendingMachine.Items[userInput];
                 if (selectedItem.Qty == 0)
                 {
                     Console.WriteLine("Sorry, that item is sold out");
@@ -148,7 +148,7 @@ namespace ConsoleVendingMachine
         public void UserFinishTransaction(VendingMachine vendingMachine)
         {
             vendingMachine.GiveChange();
-            foreach (KeyValuePair<string, int> coinType in vendingMachine.coins)
+            foreach (KeyValuePair<string, int> coinType in vendingMachine.Coins)
             {
                 if (coinType.Value > 0)
                 {

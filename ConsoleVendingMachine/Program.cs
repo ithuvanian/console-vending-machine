@@ -10,7 +10,13 @@ namespace ConsoleVendingMachine
     {
         static void Main(string[] args)
         {
-            VendingMachine vendingMachine = new VendingMachine();
+            Dictionary<string, int> initialCoins = new Dictionary<string, int>
+            {
+                {"quarters", 0 },
+                {"dimes", 0 },
+                {"nickels", 0 }
+            };
+            VendingMachine vendingMachine = new VendingMachine(0, 0, initialCoins);
             UserInterface userInterface = new UserInterface();
             while (true)
             {
