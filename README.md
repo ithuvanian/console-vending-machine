@@ -43,4 +43,4 @@ This project was built to simulate a vending machine from the program console, w
     - if an item is sold out, the user is not able to purchase it
 
 ---
-9. The user can generate a new file with a sales report for all items *in our program, this is done by pressing 3 from the main menu*
+9. The user can generate a new file with a sales report for all items- *in our program, this is done by pressing 3 from the main menu*
