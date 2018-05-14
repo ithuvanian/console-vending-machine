@@ -1,3 +1,5 @@
+This is a C# .NET console application that can be run from MS Visual Studio.
+
 # console-vending-machine
 Tech Elevator pair project, week 4
 
