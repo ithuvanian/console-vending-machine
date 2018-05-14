@@ -7,7 +7,7 @@ This project was built to simulate a vending machine from the program console, w
 
 ---
 1. A main menu gives the user an option to view all items or make a purchase.
-  - a csv file is provided with all the items in the machine, and a corresponding item code and price
+    - a csv file is provided with all the items in the machine, and a corresponding item code and price
   - all items are initialized with 5 in stock and zero sold
 
 ---
