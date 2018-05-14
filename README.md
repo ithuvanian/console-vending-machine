@@ -1,3 +1,5 @@
+A simple program to simulate a vending machine with a balance of money and an inventory of items. 
+
 This is a C# .NET console application that can be run from MS Visual Studio.
 
 # console-vending-machine
