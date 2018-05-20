@@ -155,7 +155,7 @@ namespace ConsoleVendingMachine
                     Console.WriteLine($"Returning {coinType.Value} {coinType.Key}");
                 }
             }
-            vendingMachine.Reset();
+            vendingMachine.ResetCoins();
             Console.WriteLine("...");
 
             foreach (Item purchasedItem in purchasedItems)

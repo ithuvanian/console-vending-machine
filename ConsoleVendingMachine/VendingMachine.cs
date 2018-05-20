@@ -117,7 +117,7 @@ namespace ConsoleVendingMachine
             }
         }
 
-        public void Reset()
+        public void ResetCoins()
         {
             Coins["quarters"] = 0;
             Coins["dimes"] = 0;
